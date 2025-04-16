@@ -1,30 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="https://cdn.tailwindcss.com"></script>
-  <title>DancersVault</title>
+  <title>DancersVault - My Vault</title>
 </head>
-<body class="bg-gray-900 text-white flex items-center justify-center h-screen">
-  <div class="text-center">
-    <h1 class="text-4xl font-bold mb-4">DancersVault Prototype</h1>
-    <p class="text-lg text-gray-300">This is a placeholder page for Vault</p>
-  </div>
-  <body class="bg-gray-900 text-white font-sans">
+<body class="bg-gray-900 text-white font-sans min-h-screen flex flex-col">
 
-    <!-- Nav Bar -->
-    <nav class="bg-gray-800 text-white px-6 py-4 flex justify-between items-center">
-      <h1 class="text-xl font-bold">DancersVault</h1>
-      <div class="space-x-4">
-        <a href="/dancersvault-prototype/" class="hover:text-yellow-400">Home</a>
-        <a href="/dancersvault-prototype/dashboard/" class="hover:text-yellow-400">Dashboard</a>
-        <a href="/dancersvault-prototype/profile/" class="hover:text-yellow-400">Profile</a>
-        <a href="/dancersvault-prototype/admin/" class="hover:text-yellow-400">Admin</a>
+  <!-- Nav Bar -->
+  <nav class="bg-gray-800 text-white px-6 py-4 flex justify-between items-center shadow-md">
+    <h1 class="text-xl font-bold">DancersVault</h1>
+    <div class="space-x-4">
+      <a href="/dancersvault-prototype/" class="hover:text-yellow-400">Home</a>
+      <a href="/dancersvault-prototype/dashboard/" class="hover:text-yellow-400">Dashboard</a>
+      <a href="/dancersvault-prototype/profile/" class="hover:text-yellow-400">Profile</a>
+      <a href="/dancersvault-prototype/admin/" class="hover:text-yellow-400">Admin</a>
+    </div>
+  </nav>
+
+  <!-- Vault Gallery -->
+  <main class="flex-grow max-w-6xl mx-auto p-6">
+    <h2 class="text-3xl font-bold mb-6">My Vault</h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+      <div class="bg-gray-800 p-2 rounded shadow-md">
+        <img src="../assets/sample-uploads/thumbnail1.jpg" alt="Vault Item" class="rounded mb-2" />
+        <p class="text-sm text-center text-gray-300">Performance Set #1</p>
       </div>
-    </nav>
-  
-    <div class="max-w-6xl mx-auto p-6">
-  
+      <div class="bg-gray-800 p-2 rounded shadow-md">
+        <img src="../assets/sample-uploads/thumbnail2.jpg" alt="Vault Item" class="rounded mb-2" />
+        <p class="text-sm text-center text-gray-300">Behind the Scenes</p>
+      </div>
+      <div class="bg-gray-800 p-2 rounded shadow-md">
+        <img src="../assets/sample-uploads/thumbnail1.jpg" alt="Vault Item" class="rounded mb-2" />
+        <p class="text-sm text-center text-gray-300">Custom Request #4</p>
+      </div>
+      <div class="bg-gray-800 p-2 rounded shadow-md">
+        <img src="../assets/sample-uploads/thumbnail2.jpg" alt="Vault Item" class="rounded mb-2" />
+        <p class="text-sm text-center text-gray-300">Training Clip</p>
+      </div>
+    </div>
+  </main>
+
 </body>
 </html>

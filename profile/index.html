@@ -1,31 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="https://cdn.tailwindcss.com"></script>
-  <title>DancersVault</title>
+  <title>DancersVault - Profile</title>
 </head>
-<body class="bg-gray-900 text-white font-sans">
-  <div class="max-w-4xl mx-auto p-6">
-  
+<body class="bg-gray-900 text-white font-sans min-h-screen flex flex-col">
 
-      <!-- Nav Bar -->
-      <nav class="bg-gray-800 text-white px-6 py-4 flex justify-between items-center">
-        <h1 class="text-xl font-bold">DancersVault</h1>
-        <div class="space-x-4">
-          <a href="/dancersvault-prototype/" class="hover:text-yellow-400">Home</a>
-          <a href="/dancersvault-prototype/dashboard/" class="hover:text-yellow-400">Dashboard</a>
-          <a href="/dancersvault-prototype/profile/" class="hover:text-yellow-400">Profile</a>
-          <a href="/dancersvault-prototype/admin/" class="hover:text-yellow-400">Admin</a>
-        </div>
-      </nav>
-    
-      <div class="max-w-6xl mx-auto p-6">
-    
+  <!-- Nav Bar -->
+  <nav class="bg-gray-800 text-white px-6 py-4 flex justify-between items-center shadow-md">
+    <h1 class="text-xl font-bold">DancersVault</h1>
+    <div class="space-x-4">
+      <a href="/dancersvault-prototype/" class="hover:text-yellow-400">Home</a>
+      <a href="/dancersvault-prototype/dashboard/" class="hover:text-yellow-400">Dashboard</a>
+      <a href="/dancersvault-prototype/profile/" class="hover:text-yellow-400">Profile</a>
+      <a href="/dancersvault-prototype/admin/" class="hover:text-yellow-400">Admin</a>
+    </div>
+  </nav>
+
+  <!-- Profile Content -->
+  <main class="flex-grow max-w-4xl mx-auto p-6">
     <!-- Profile Banner -->
     <div class="bg-gray-800 p-6 rounded-lg shadow-md text-center">
-      <img src="../assets/sample-uploads/thumbnail1.jpg" alt="Dancer Avatar" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover border-4 border-yellow-500">
+      <img src="../assets/sample-uploads/thumbnail1.jpg" alt="Dancer Avatar" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover border-4 border-yellow-500" />
       <h1 class="text-3xl font-bold">StarDancer</h1>
       <p class="text-gray-400">Dancer • Austin, TX</p>
       <p class="mt-4 text-sm text-gray-300">“Just a Texas girl doing what I love. Vault is open... for the right eyes.”</p>
@@ -37,13 +35,13 @@
       <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
         <!-- Locked Thumbnail -->
         <div class="relative group">
-          <img src="../assets/sample-uploads/thumbnail2.jpg" alt="Vault preview" class="rounded-lg opacity-50 group-hover:opacity-80">
+          <img src="../assets/sample-uploads/thumbnail2.jpg" alt="Vault preview" class="rounded-lg opacity-50 group-hover:opacity-80" />
           <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-60 rounded-lg text-yellow-400 text-sm font-semibold opacity-0 group-hover:opacity-100 transition">
             🔒 Members Only
           </div>
         </div>
         <div class="relative group">
-          <img src="../assets/sample-uploads/thumbnail1.jpg" alt="Vault preview" class="rounded-lg opacity-50 group-hover:opacity-80">
+          <img src="../assets/sample-uploads/thumbnail1.jpg" alt="Vault preview" class="rounded-lg opacity-50 group-hover:opacity-80" />
           <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-60 rounded-lg text-yellow-400 text-sm font-semibold opacity-0 group-hover:opacity-100 transition">
             🔒 Members Only
           </div>
@@ -57,7 +55,7 @@
         Tip $5
       </button>
     </div>
+  </main>
 
-  </div>
 </body>
 </html>

@@ -1,57 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="https://cdn.tailwindcss.com"></script>
-  <title>DancersVault</title>
+  <title>DancersVault - Dashboard</title>
 </head>
 <body class="bg-gray-900 text-white min-h-screen font-sans">
 
-    <!-- Nav Bar -->
-      <nav class="bg-gray-800 text-white px-6 py-4 flex justify-between items-center">
-        <h1 class="text-xl font-bold">DancersVault</h1>
-        <div class="space-x-4">
-          <a href="/dancersvault-prototype/" class="hover:text-yellow-400">Home</a>
-          <a href="/dancersvault-prototype/dashboard/" class="hover:text-yellow-400">Dashboard</a>
-          <a href="/dancersvault-prototype/profile/" class="hover:text-yellow-400">Profile</a>
-          <a href="/dancersvault-prototype/admin/" class="hover:text-yellow-400">Admin</a>
-        </div>
-      </nav>
-      <div class="flex flex-col md:flex-row">
-    
-<!-- Main Content -->
+  <!-- Nav Bar -->
+  <nav class="bg-gray-800 text-white px-6 py-4 flex justify-between items-center shadow-md">
+    <h1 class="text-xl font-bold">DancersVault</h1>
+    <div class="space-x-4">
+      <a href="/dancersvault-prototype/" class="hover:text-yellow-400">Home</a>
+      <a href="/dancersvault-prototype/dashboard/" class="hover:text-yellow-400">Dashboard</a>
+      <a href="/dancersvault-prototype/profile/" class="hover:text-yellow-400">Profile</a>
+      <a href="/dancersvault-prototype/admin/" class="hover:text-yellow-400">Admin</a>
+    </div>
+  </nav>
+
+  <!-- Dashboard Layout -->
+  <div class="flex flex-col md:flex-row">
+    <!-- Main Content -->
     <main class="flex-1 p-6">
       <!-- Profile Card -->
-      <div class="bg-gray-800 p-4 rounded-lg mb-6 shadow-md">
-        <h3 class="text-2xl font-semibold mb-2">Welcome, StarDancer</h3>
-        <p class="text-gray-400">Followers: 1,245 • Tips Earned: $820</p>
-      </div>
-
-      <!-- Vault Upload Section -->
-      <div>
-        <div class="flex justify-between items-center mb-4">
-          <h4 class="text-xl font-bold">My Vault</h4>
-          <button class="bg-yellow-500 hover:bg-yellow-400 text-black px-4 py-2 rounded">
-            Upload New Item
-          </button>
-        </div>
-
-        <!-- Fake Upload Grid -->
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-          <div class="bg-gray-700 p-2 rounded shadow-md">
-            <img src="../assets/sample-uploads/thumbnail1.jpg" alt="Upload" class="rounded mb-2">
-            <p class="text-sm text-center text-gray-300">Outfit #1</p>
-          </div>
-          <div class="bg-gray-700 p-2 rounded shadow-md">
-            <img src="../assets/sample-uploads/thumbnail2.jpg" alt="Upload" class="rounded mb-2">
-            <p class="text-sm text-center text-gray-300">Outfit #2</p>
-          </div>
-          <!-- Add more dummy uploads if you want -->
-        </div>
-      </div>
-    </main>
-  </div>
-</body>
-
-</html>
+      <div class="
