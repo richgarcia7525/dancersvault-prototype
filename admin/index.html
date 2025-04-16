@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>DancersVault</title>
+</head>
+<body class="bg-gray-900 text-white font-sans">
+  <div class="max-w-6xl mx-auto p-6">
+    <h1 class="text-3xl font-bold mb-6">Admin Dashboard</h1>
+
+    <!-- Dancer Table -->
+    <div class="overflow-x-auto bg-gray-800 p-4 rounded-lg shadow-md">
+      <table class="w-full text-left table-auto">
+        <thead>
+          <tr class="text-yellow-500 border-b border-gray-600">
+            <th class="py-2 px-4">Dancer</th>
+            <th class="py-2 px-4">Email</th>
+            <th class="py-2 px-4">Vault Items</th>
+            <th class="py-2 px-4">Tips Earned</th>
+            <th class="py-2 px-4">Status</th>
+            <th class="py-2 px-4">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="hover:bg-gray-700 border-b border-gray-700">
+            <td class="py-2 px-4">StarDancer</td>
+            <td class="py-2 px-4">star@vaultmail.com</td>
+            <td class="py-2 px-4">12</td>
+            <td class="py-2 px-4">$820</td>
+            <td class="py-2 px-4 text-green-400">Active</td>
+            <td class="py-2 px-4 space-x-2">
+              <button class="bg-yellow-500 hover:bg-yellow-400 text-black px-3 py-1 rounded text-sm">Review Vault</button>
+              <button class="bg-red-500 hover:bg-red-400 text-white px-3 py-1 rounded text-sm">Suspend</button>
+            </td>
+          </tr>
+          <tr class="hover:bg-gray-700">
+            <td class="py-2 px-4">MoonGoddess</td>
+            <td class="py-2 px-4">moon@dancers.net</td>
+            <td class="py-2 px-4">8</td>
+            <td class="py-2 px-4">$540</td>
+            <td class="py-2 px-4 text-yellow-300">Pending</td>
+            <td class="py-2 px-4 space-x-2">
+              <button class="bg-yellow-500 hover:bg-yellow-400 text-black px-3 py-1 rounded text-sm">Approve</button>
+              <button class="bg-gray-600 hover:bg-gray-500 text-white px-3 py-1 rounded text-sm">Reject</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+
+</html>
